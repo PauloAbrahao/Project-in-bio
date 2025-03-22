@@ -11,6 +11,9 @@ dependencies:
   '@next-auth/firebase-adapter':
     specifier: 0.0.2-canary.207
     version: 0.0.2-canary.207(firebase@8.10.1)(next-auth@5.0.0-beta.25)
+  browser-image-compression:
+    specifier: 2.0.2
+    version: 2.0.2
   clsx:
     specifier: ^2.1.1
     version: 2.1.1
@@ -1276,6 +1279,12 @@ packages:
     dependencies:
       fill-range: 7.1.1
     dev: true
+
+  /browser-image-compression@2.0.2:
+    resolution: {integrity: sha512-pBLlQyUf6yB8SmmngrcOw3EoS4RpQ1BcylI3T9Yqn7+4nrQTXJD4sJDe5ODnJdrvNMaio5OicFo75rDyJD2Ucw==}
+    dependencies:
+      uzip: 0.20201231.0
+    dev: false
 
   /buffer-equal-constant-time@1.0.1:
     resolution: {integrity: sha512-zRpUiDwd/xk6ADqPMATG8vc9VPrkck7T07OIx0gnjmJAnHnTVXNQG3vfvWNuiZIkwu9KrKdA1iJKfsfTVxE6NA==}
@@ -2966,6 +2975,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /uzip@0.20201231.0:
+    resolution: {integrity: sha512-OZeJfZP+R0z9D6TmBgLq2LHzSSptGMGDGigGiEe0pr8UBe/7fdflgHlHBNDASTXB5jnFuxHpNaJywSg8YFeGng==}
+    dev: false
 
   /webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
