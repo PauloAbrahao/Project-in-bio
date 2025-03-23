@@ -1,12 +1,25 @@
 "use server";
 
+import { Link } from "../actions/add-custom-links";
 import { db } from "../lib/firebase";
 
 export type ProfileData = {
   userId: string;
+  name: string;
+  description: string;
+  imagePath: string;
   totalVisits: number;
   createdAt: number;
-  // adicionar mais depois - todo
+  socialMedias?: {
+    github: string;
+    instagram: string;
+    linkedin: string;
+    twitter: string;
+  };
+  link1?: Link;
+  link2?: Link;
+  link3?: Link;
+  updatedAt?: number;
 };
 
 export type ProjectData = {
@@ -25,7 +38,6 @@ export async function getProfileData(profileId: string) {
 
   return snapshot.data() as ProfileData;
 }
-
 
 export async function getProfileProjects(profileId: string) {
   const snapshot = await db
