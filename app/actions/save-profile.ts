@@ -16,7 +16,7 @@ export async function saveProfile(formData: FormData) {
     const yourDescription = formData.get("yourDescription") as string;
     const file = formData.get("profilePic") as File;
 
-    let imagePath = null;
+    let imagePath: string | null = null;
 
     const hasFile = file && file.size > 0;
 
@@ -59,7 +59,6 @@ export async function saveProfile(formData: FormData) {
 
     return true;
   } catch (error) {
-    console.error(error);
     return false;
   }
 }

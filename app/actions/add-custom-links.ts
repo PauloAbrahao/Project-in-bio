@@ -30,6 +30,6 @@ export default async function addCustomLinks({
       link3,
     });
   } catch (error) {
-    console.error(error);
+    throw new Error("Erro ao adicionar links personalizados");
   }
 }

@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
 
           if (hostedVoucherUrl) {
             const userEmail = event.data.object.customer_details?.email;
-            console.log("Enviar email para o cliente com o boleto");
+            // TODO: Enviar email para o cliente com o boleto
           }
         }
 
@@ -83,7 +83,6 @@ export async function POST(req: NextRequest) {
 
     return new NextResponse(null, { status: 200 });
   } catch (error) {
-    console.error("Stripe webhook error", error);
     return new NextResponse(null, { status: 500 });
   }
 }

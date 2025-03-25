@@ -34,7 +34,6 @@ export default async function createSocialLinks({
 
     return true;
   } catch (error) {
-    console.error(error);
     return false;
   }
 }

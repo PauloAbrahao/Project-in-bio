@@ -20,7 +20,6 @@ export async function compressFiles(files: File[]) {
     try {
       return await compressImage(file);
     } catch (error) {
-      console.error(error);
       return null;
     }
   });
