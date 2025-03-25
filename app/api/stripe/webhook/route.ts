@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
           event.data.object.payment_intent
         ) {
           const paymentIntent = await stripe.paymentIntents.retrieve(
-            event.data.object.payment_intent.toString()
+            event.data.object.payment_intent.toString(),
           );
           const hostedVoucherUrl =
             paymentIntent.next_action?.boleto_display_details
@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
 
         if (customerId) {
           const customer = (await stripe.customers.retrieve(
-            customerId
+            customerId,
           )) as Stripe.Customer;
 
           if (customer && customer.metadata.userId) {
