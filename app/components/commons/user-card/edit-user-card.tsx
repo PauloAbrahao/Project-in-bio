@@ -29,14 +29,14 @@ export default function EditUserCard({
   const [profilePic, setProfilePic] = useState<string | null>(null);
   const [yourName, setYourName] = useState(profileData?.name || "");
   const [yourDescription, setYourDescription] = useState(
-    profileData?.description || ""
+    profileData?.description || "",
   );
 
   async function handleSaveProfile() {
     setIsSavingProfile(true);
 
     const imagesInput = document.getElementById(
-      "profile-pic-input"
+      "profile-pic-input",
     ) as HTMLInputElement;
 
     if (!imagesInput.files) return;

@@ -5,7 +5,7 @@ import { db } from "../lib/firebase";
 
 export async function increaseProjectVisits(
   profileId: string,
-  projectId: string
+  projectId: string,
 ) {
   const projectRef = db
     .collection("profiles")

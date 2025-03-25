@@ -31,7 +31,7 @@ export default function NewProject({ profileId }: { profileId: string }) {
   async function handleCreateProject() {
     setIsCreatingProject(true);
     const imagesInput = document.getElementById(
-      "imageInput"
+      "imageInput",
     ) as HTMLInputElement;
 
     if (!imagesInput.files?.length) return;

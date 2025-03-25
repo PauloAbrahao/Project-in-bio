@@ -37,7 +37,7 @@ export async function saveProfile(formData: FormData) {
       }
 
       const storageRef = storage.file(
-        `profiles-images/${profileId}/${randomUUID()}`
+        `profiles-images/${profileId}/${randomUUID()}`,
       );
       const arrayBuffer = await file.arrayBuffer();
       const buffer = Buffer.from(arrayBuffer);

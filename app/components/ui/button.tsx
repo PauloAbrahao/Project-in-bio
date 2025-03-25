@@ -16,7 +16,7 @@ export default function Button({
         variant === "primary" && "bg-accent-purple",
         variant === "secondary" && "bg-background-tertiary",
         variant === "ghost" && "border-border-primary",
-        props.className
+        props.className,
       )}
     >
       {children}

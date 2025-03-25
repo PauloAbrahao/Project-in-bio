@@ -5,7 +5,9 @@ import "server-only";
 
 // Certifcado
 
-const privateKeyFormatted = process.env.FIREBASE_PRIVATE_KEY!.split(String.raw`\n`).join('\n')
+const privateKeyFormatted = process.env
+  .FIREBASE_PRIVATE_KEY!.split(String.raw`\n`)
+  .join("\n");
 
 export const firebaseCert = cert({
   projectId: process.env.FIREBASE_PROJECT_ID,
@@ -24,7 +26,6 @@ if (!getApps().length) {
 export const db = getFirestore();
 
 export const storage = getStorage().bucket();
-
 
 export async function getDownloadURLFromPath(path?: string) {
   if (!path) return;
