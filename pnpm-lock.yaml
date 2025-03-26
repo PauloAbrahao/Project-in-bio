@@ -5,9 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@auth/core':
+    specifier: 0.37.2
+    version: 0.37.2
   '@auth/firebase-adapter':
     specifier: ^2.7.2
-    version: 2.8.0(firebase-admin@12.7.0)
+    version: 2.7.2(firebase-admin@12.7.0)
   '@next-auth/firebase-adapter':
     specifier: 0.0.2-canary.207
     version: 0.0.2-canary.207(firebase@8.10.1)(next-auth@5.0.0-beta.25)
@@ -98,33 +101,12 @@ packages:
       preact-render-to-string: 5.2.3(preact@10.11.3)
     dev: false
 
-  /@auth/core@0.38.0:
-    resolution: {integrity: sha512-ClHl44x4cY3wfJmHLpW+XrYqED0fZIzbHmwbExltzroCjR5ts3DLTWzADRba8mJFYZ8JIEJDa+lXnGl0E9Bl7Q==}
-    peerDependencies:
-      '@simplewebauthn/browser': ^9.0.1
-      '@simplewebauthn/server': ^9.0.2
-      nodemailer: ^6.8.0
-    peerDependenciesMeta:
-      '@simplewebauthn/browser':
-        optional: true
-      '@simplewebauthn/server':
-        optional: true
-      nodemailer:
-        optional: true
-    dependencies:
-      '@panva/hkdf': 1.2.1
-      jose: 6.0.10
-      oauth4webapi: 3.3.1
-      preact: 10.24.3
-      preact-render-to-string: 6.5.11(preact@10.24.3)
-    dev: false
-
-  /@auth/firebase-adapter@2.8.0(firebase-admin@12.7.0):
-    resolution: {integrity: sha512-aaZfF+u/uXeXo+12PBPzAAHUsUL92odReqGAMzwkD5SVw3wCeY4oMwI39p4UHH/fjuWiCmdQ7htDcI9WQYSxLw==}
+  /@auth/firebase-adapter@2.7.2(firebase-admin@12.7.0):
+    resolution: {integrity: sha512-49bSCAehGD/rdXdbpwWjnS9/bpUKN8pD4VK6iqRNLcVk6Mk43DJGf/peeJ/6ja9WH+DRMlhq+fRrAz0rGTdIqw==}
     peerDependencies:
       firebase-admin: ^12.0.0
     dependencies:
-      '@auth/core': 0.38.0
+      '@auth/core': 0.37.2
       firebase-admin: 12.7.0
     transitivePeerDependencies:
       - '@simplewebauthn/browser'
@@ -3335,10 +3317,6 @@ packages:
     resolution: {integrity: sha512-s+3Al/p9g32Iq+oqXxkW//7jk2Vig6FF1CFqzVXoTUXt2qz89YWbL+OwS17NFYEvxC35n0FKeGO2LGYSxeM2Gg==}
     dev: false
 
-  /jose@6.0.10:
-    resolution: {integrity: sha512-skIAxZqcMkOrSwjJvplIPYrlXGpxTPnro2/QWTDCxAdWQrSTV5/KqspMWmi5WAx5+ULswASJiZ0a+1B/Lxt9cw==}
-    dev: false
-
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: true
@@ -4040,20 +4018,8 @@ packages:
       pretty-format: 3.8.0
     dev: false
 
-  /preact-render-to-string@6.5.11(preact@10.24.3):
-    resolution: {integrity: sha512-ubnauqoGczeGISiOh6RjX0/cdaF8v/oDXIjO85XALCQjwQP+SB4RDXXtvZ6yTYSjG+PC1QRP2AhPgCEsM2EvUw==}
-    peerDependencies:
-      preact: '>=10'
-    dependencies:
-      preact: 10.24.3
-    dev: false
-
   /preact@10.11.3:
     resolution: {integrity: sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==}
-    dev: false
-
-  /preact@10.24.3:
-    resolution: {integrity: sha512-Z2dPnBnMUfyQfSQ+GBdsGa16hz35YmLmtTLhM169uW944hYL6xzTYkJjC07j+Wosz733pMWx0fgON3JNw1jJQA==}
     dev: false
 
   /prelude-ls@1.2.1:

@@ -10,6 +10,7 @@
     "format": "prettier --write \"app/**/*.{ts,tsx}\""
   },
   "dependencies": {
+    "@auth/core": "0.37.2",
     "@auth/firebase-adapter": "^2.7.2",
     "@next-auth/firebase-adapter": "0.0.2-canary.207",
     "@stripe/stripe-js": "6.1.0",
